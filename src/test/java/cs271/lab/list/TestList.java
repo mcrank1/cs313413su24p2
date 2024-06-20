@@ -195,9 +195,12 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO use the set method to change specific elements in the list
+    // DONE use the set method to change specific elements in the list
     // such that the following assertions pass
     // (without touching the assertions themselves)
+    list.set(1,99);
+    list.set(3,99);
+    list.set(5,99);
     assertEquals(7, list.size());
     assertEquals(33, list.get(0).intValue());
     assertEquals(99, list.get(1).intValue());
