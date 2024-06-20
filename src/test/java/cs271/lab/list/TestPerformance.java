@@ -9,16 +9,26 @@ import org.junit.Test;
 
 public class TestPerformance {
 
-  // TODO run test and record running times for SIZE = 10, 100, 1000, 10000, ...
+  // DONE run test and record running times for SIZE = 10, 100, 1000, 10000, ...
   // (choose in conjunction with REPS below up to an upper limit where the clock
   // running time is in the tens of seconds)
   // TODO (optional) refactor to DRY
   // which of the two lists performs better as the size increases?
-  private final int SIZE = 10;
+  private final int SIZE = 10000;
+  //Size 10 = 9ms
+  // Size 100 = 9ms
+  // Size 1000 = 7ms
+  // Size 10000 = 7ms
+  //REPS 10 = 6ms
+  //REPS 100 = 7ms
+  //REPS 1000 = 7ms
+  //REPS 10000 = 7ms
+  //It seems that when increasing the size the runtime goes a little bit faster.
+  //When increasing the REPS it gets a little bit slower.
 
-  // TODO choose this value in such a way that you can observe an actual effect
+  // DONE choose this value in such a way that you can observe an actual effect
   // for increasing problem sizes
-  private final int REPS = 1000000;
+  private final int REPS = 10000;
 
   private List<Integer> arrayList;
 
