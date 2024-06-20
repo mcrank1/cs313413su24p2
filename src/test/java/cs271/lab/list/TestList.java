@@ -138,7 +138,7 @@ public class TestList {
 
   @Test
   public void testAddAll() {
-    // TODO in a single statement using addAll and List.of,
+    // DONE in a single statement using addAll and List.of,
     // add items to the list to make the following assertions pass
     // (without touching the assertions themselves)
     list.addAll(List.of(33,77,44,77,55,77,66));
@@ -161,9 +161,10 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO in a single statement using removeAll and List.of,
+    // DONE in a single statement using removeAll and List.of,
     // remove items from the list to make the following assertions pass
     // (without touching the assertions themselves)
+    list.removeAll(List.of(33,44,55,66));
     assertEquals(3, list.size());
     assertEquals(List.of(77, 77, 77), list);
   }
