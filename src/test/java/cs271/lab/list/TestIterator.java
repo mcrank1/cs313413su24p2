@@ -11,6 +11,7 @@ import java.util.List;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.LinkedList;
 
 public class TestIterator {
 
@@ -19,8 +20,11 @@ public class TestIterator {
 
   @Before
   public void setUp() throws Exception {
+    //ArrayList ran in 6ms
     list = new ArrayList<Integer>();
-    // TODO also try with a LinkedList - does it make any difference?
+    // DONE also try with a LinkedList - does it make any difference?
+    //LinkedList ran in 8ms so it is slower than the ArrayList.
+    //list = new LinkedList<Integer>();
   }
 
   @After
