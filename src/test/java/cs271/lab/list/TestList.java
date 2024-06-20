@@ -40,11 +40,13 @@ public class TestList {
 
   @Test
   public void testSizeNonEmpty() {
-    // TODO fix the expected values in the assertions below
+    // DONE fix the expected values in the assertions below
     list.add(77);
-    assertEquals(true, list.isEmpty());
-    assertEquals(0, list.size());
-    assertEquals(0, list.get(0).intValue());
+    //list should not be empty after adding element
+    assertEquals(false, list.isEmpty());
+    //list size should be one when adding one element
+    assertEquals(1, list.size());
+    assertEquals(77, list.get(0).intValue());
   }
 
   @Test
