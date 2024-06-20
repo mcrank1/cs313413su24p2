@@ -78,7 +78,7 @@ public class TestIterator {
     final var i = list.iterator();
     while (i.hasNext()) {
       if (i.next() == 77) {
-        i.remove(); // DONE what happens if you use list.remove(Integer.valueOf(77))?
+        i.remove(); // DONE what happens if you use list.remove(Integer.valueOf(77?))
         //list.remove(Integer.valueOf(77));
         //If we use the above code the test fails.
       }
